@@ -22,7 +22,7 @@ class NewDevice extends Notification implements ShouldQueue
     /**
      * Create a new notification instance.
      *
-     * @param AuthenticationLog $authenticationLog
+     * @param  AuthenticationLog  $authenticationLog
      * @return void
      */
     public function __construct(AuthenticationLog $authenticationLog)
@@ -44,6 +44,7 @@ class NewDevice extends Notification implements ShouldQueue
      * Get the mail representation of the notification.
      *
      * @param  mixed  $notifiable
+     *
      * @throws Exception
      */
     public function toMail($notifiable): MailMessage
